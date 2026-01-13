@@ -1,0 +1,73 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Blue section on left -->
+  <rect x="0" y="0" width="800" height="600" fill="#0ea5e9"/>
+  
+  <!-- Diagonal line separating blue and white -->
+  <path d="M 800 0 L 800 600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Light blue diagonal stripe top-right of blue section -->
+  <path d="M 750 0 L 800 0 L 800 150 L 750 100 Z" fill="#38bdf8" opacity="0.6"/>
+  
+  <!-- White section on right -->
+  <rect x="800" y="0" width="400" height="600" fill="#ffffff"/>
+  
+  <!-- Vertical stripes top-right -->
+  <rect x="1050" y="0" width="30" height="200" fill="#8B1A1A" transform="rotate(15 1065 100)"/>
+  <rect x="1080" y="0" width="30" height="200" fill="#0284c7" transform="rotate(15 1095 100)"/>
+  <rect x="1110" y="0" width="30" height="200" fill="#38bdf8" transform="rotate(15 1125 100)"/>
+  
+  <!-- Triangular shapes bottom-right -->
+  <path d="M 1000 450 L 1150 600 L 1000 600 Z" fill="#bae6fd"/>
+  <path d="M 1050 500 L 1200 600 L 1050 600 Z" fill="#0284c7"/>
+  
+  <!-- Text on left - "RELIABLE CARGO PARTNER" -->
+  <text x="100" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" letter-spacing="4px">RELIABLE CARGO</text>
+  <text x="100" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" letter-spacing="4px">PARTNER</text>
+  
+  <!-- Tagline -->
+  <text x="100" y="340" font-family="Arial, sans-serif" font-size="24" fill="white" letter-spacing="1px">Your trusted source for secure</text>
+  <text x="100" y="380" font-family="Arial, sans-serif" font-size="24" fill="white" letter-spacing="1px">global transport.</text>
+  
+  <!-- Logo on right side -->
+  <g transform="translate(900, 150)">
+    <!-- Circular emblem with red ring -->
+    <circle cx="150" cy="150" r="120" fill="none" stroke="#8B1A1A" stroke-width="8" stroke-dasharray="0 200 200 200"/>
+    <path d="M 30 150 A 120 120 0 1 1 270 150" fill="none" stroke="#8B1A1A" stroke-width="8"/>
+    
+    <!-- Dark blue shape (ship's bow/container) -->
+    <path d="M 80 100 L 120 80 L 180 80 L 220 100 L 220 200 L 80 200 Z" fill="#0c4a6e"/>
+    
+    <!-- Light blue wave at base -->
+    <path d="M 80 200 Q 150 180 220 200" fill="#38bdf8" opacity="0.7"/>
+    
+    <!-- Semi-truck with trailer -->
+    <rect x="100" y="140" width="60" height="30" fill="white" opacity="0.9"/>
+    <rect x="160" y="150" width="40" height="20" fill="white" opacity="0.9"/>
+    <line x1="120" y1="140" x2="120" y2="120" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="140" y1="140" x2="140" y2="120" stroke="white" stroke-width="2" opacity="0.8"/>
+    <line x1="160" y1="150" x2="160" y2="130" stroke="white" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Speed lines behind truck -->
+    <line x1="90" y1="155" x2="100" y2="155" stroke="white" stroke-width="2" opacity="0.6"/>
+    <line x1="85" y1="165" x2="95" y2="165" stroke="white" stroke-width="2" opacity="0.6"/>
+    <line x1="88" y1="175" x2="98" y2="175" stroke="white" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Airplane -->
+    <path d="M 180 70 L 200 75 L 195 85 L 180 80 Z" fill="white" opacity="0.9"/>
+    <path d="M 200 75 L 220 70 L 215 80 L 200 85 Z" fill="white" opacity="0.9"/>
+    
+    <!-- TIL text -->
+    <text x="150" y="240" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">TIL</text>
+    
+    <!-- "RELIABLE SHIPPING PARTNER" text around ring -->
+    <path id="arcPath" d="M 30 150 A 120 120 0 0 1 270 150" fill="none"/>
+    <text font-family="Arial, sans-serif" font-size="14" fill="#8B1A1A" font-weight="bold" letter-spacing="2px">
+      <textPath href="#arcPath" startOffset="5%">RELIABLE SHIPPING PARTNER</textPath>
+    </text>
+  </g>
+  
+  <!-- Company name below logo -->
+  <text x="900" y="420" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#0c4a6e" letter-spacing="3px">TRANSCOM</text>
+  <text x="900" y="460" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0c4a6e" letter-spacing="2px">INTERNATIONAL</text>
+  <text x="900" y="500" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0c4a6e" letter-spacing="2px">SHIPPING &amp; LOGISTICS</text>
+</svg>
