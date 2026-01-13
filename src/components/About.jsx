@@ -36,7 +36,6 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
                 style={{
                   background: 'linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #0284c7 100%)',
                   WebkitBackgroundClip: 'text',
@@ -133,7 +132,6 @@ const About = () => {
                     initial={{ opacity: 0, scale: 0.8, y: 20 }}
                     whileInView={{ opacity: 1, scale: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
                     animate={{
                       textShadow: [
                         '0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.3)',
@@ -142,6 +140,9 @@ const About = () => {
                       ],
                     }}
                     transition={{
+                      opacity: { duration: 0.6, delay: 0.2 },
+                      scale: { duration: 0.6, delay: 0.2 },
+                      y: { duration: 0.6, delay: 0.2 },
                       textShadow: {
                         duration: 2,
                         repeat: Infinity,
@@ -399,7 +400,6 @@ const About = () => {
                       initial={{ opacity: 0, scale: 0.8, y: 20 }}
                       whileInView={{ opacity: 1, scale: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: 0.2 }}
                       animate={{
                         textShadow: [
                           '0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.3)',
@@ -408,6 +408,9 @@ const About = () => {
                         ],
                       }}
                       transition={{
+                        opacity: { duration: 0.6, delay: 0.2 },
+                        scale: { duration: 0.6, delay: 0.2 },
+                        y: { duration: 0.6, delay: 0.2 },
                         textShadow: {
                           duration: 2,
                           repeat: Infinity,

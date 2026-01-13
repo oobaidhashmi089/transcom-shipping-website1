@@ -75,7 +75,6 @@ const Footer = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
                 animate={{
                   textShadow: [
                     '0 0 10px rgba(255,255,255,0.3)',
@@ -84,6 +83,8 @@ const Footer = () => {
                   ],
                 }}
                 transition={{
+                  opacity: { duration: 0.6, delay: 0.1 },
+                  y: { duration: 0.6, delay: 0.1 },
                   textShadow: {
                     duration: 3,
                     repeat: Infinity,
@@ -146,7 +147,6 @@ const Footer = () => {
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 + 0.1, duration: 0.5 }}
                   animate={{
                     textShadow: [
                       '0 0 10px rgba(14, 165, 233, 0.3)',
@@ -155,6 +155,8 @@ const Footer = () => {
                     ],
                   }}
                   transition={{
+                    opacity: { delay: index * 0.1 + 0.1, duration: 0.5 },
+                    x: { delay: index * 0.1 + 0.1, duration: 0.5 },
                     textShadow: {
                       duration: 2,
                       repeat: Infinity,

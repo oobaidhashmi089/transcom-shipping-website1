@@ -82,7 +82,6 @@ const Stats = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
             animate={{
               textShadow: [
                 '0 0 20px rgba(255,255,255,0.3), 0 0 40px rgba(255,255,255,0.2)',
@@ -91,6 +90,8 @@ const Stats = () => {
               ],
             }}
             transition={{
+              opacity: { duration: 0.7 },
+              y: { duration: 0.7 },
               textShadow: {
                 duration: 3,
                 repeat: Infinity,
